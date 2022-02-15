@@ -26,3 +26,9 @@ img {
     border: 1px solid;
     border-color: gray;
 }
+
+/* TODO: FIX THIS! Will look super ugly. Just a demonstration of how to add the effect */
+.navbar-dark .navbar-nav > li > a:hover, .navbar-dark .navbar-nav > li > a:focus {
+    background-color: #FFFF00;
+    color: #FFC0CB;
+}
