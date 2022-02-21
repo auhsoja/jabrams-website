@@ -20,12 +20,12 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">Jabrams (TODO: Make this a logo?)</a>
+        <!-- <a class="navbar-brand" href="index.html"><img src="./assets/name-logo.png"></a> -->
 
         <div class="collapse navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="about.html">About</a>
@@ -50,20 +50,16 @@
                     <a class="nav-link" href="references.html">References</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
         </div>
     </nav>
     <!------------------------->
+    <div class="body-background">
     <h1 class="title text-center">Welcome, To My Special Hell<sup class="ref-cite">[<a href="references.html#undertale-hell">I don't get it</a>]</sup></h1>
-    <div id="top-pane" class="container-fluid">
-
+    <div class="container-fluid">
         <div class="row">
             <div class="col-1"></div>
             <div class="col-3" id="title-image-container">
-                <img src="assets/me.jpg" width="100%">
+                <img src="assets/jabrams-circle.png" width="100%">
             </div>
             <div class="col-8" id="title-text-container">
                 <div class="text-center">
@@ -73,11 +69,13 @@
                 <p>TODO: Fill this space or otherwise make this look less shit</p>
                 <p>^ @me from 30 minutes ago, this space is now the de facto TODO list</p>
                 <p>TODO: Get a cool theme and stuff and find a way to make the background less boring</p>
-                <p>TODO: Add the navbar and more pages</p>
+                <p>TODO: Add more pages and stuff about self</p>
                 <p>TODO: Refactor with react templating so I don't have to write so much redundant stuff</p>
-                <p>TODO: Get a linter for and otherwise pretty up this repo.</p>
                 <p>TODO: Consider putting the navigation items on right and just logo-y stuff left</p>
-                <p>TODO: Fix navbar mouseover colors</p>
+                <p>TODO: Nix bootstrap and aim for something more like oscar's stuff</p>
+                <p>TODO: Fix the icons</p>
+                <p>TODO: Add a resume tab and work on that</p>
+                <p>TODO: Replicate the scrolling effect on Oscar's website</p>
             </div>
         </div>
     </div>
@@ -106,9 +104,17 @@
     </div>
     <div class="info-box" id="hobbies-n-stuff">
         <h3>Guilty Pleasures</h3>
-        <p>Lorem ipsum ... Add personal info and stuff I enjoy. Add some fun icons and stuff here or something.</p>
+        <ul id="things-i-do">
+            <li>Running</li>
+            <li>Crossword Puzzles</li>
+            <li>Any Other Puzzle</li>
+        </ul>
     </div>
-    <footer>TODO: Make a cool footer</footer>
+    <footer>
+        <div id="linkedin-icon" class="social-tab"><img src="assets/linkedin.png" alt="linked-in"></div>
+        <div id="github-icon" class="social-tab"><img src="assets/github.png" alt="github"></div>
+    </footer>
+    </div>
 
     <script type="text/javascript" src="interactions.js"></script>
 

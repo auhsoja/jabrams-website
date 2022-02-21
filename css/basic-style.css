@@ -10,6 +10,7 @@
 .quote-box {
     border: 1px solid;
     border-color: black;
+    padding: 1em;
 }
 
 img {
@@ -27,8 +28,60 @@ img {
     border-color: gray;
 }
 
-/* TODO: FIX THIS! Will look super ugly. Just a demonstration of how to add the mouseover effect */
+.navbar-dark {
+    background: #141414 !important;
+}
+
 .navbar-dark .navbar-nav > li > a:hover, .navbar-dark .navbar-nav > li > a:focus {
-    background-color: #FFFF00;
-    color: #FFC0CB;
+    background-color: #3a3636;
+    color: white !important;
+    text-decoration: underline;
+}
+
+.body-background {
+    background-color: #171717;
+    color: white;
+}
+
+hr {
+    background-color: gray;
+}
+
+footer {
+    position: relative;
+    width: 225px;
+    margin-left: calc(50% - 115px);
+    height: 40px;
+    background: #0f0f0f;
+    text-align: center;
+    z-index: 1;
+    transition: all 0.5s;
+    border: 1px solid #515151;
+    border-bottom: none;
+}
+
+.social-tab {
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.social-tab:hover {
+    background: #333333;
+    transition: all 0.5s;
+}
+
+footer > img {
+    height: 25px;
+    margin-top: 7.5px;
+}
+
+#linkedin-icon {
+    background-color: white;
 }
