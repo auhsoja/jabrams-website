@@ -1,3 +1,7 @@
+*:hover {
+    transition: all 0.5s;
+}
+
 .header-quote {
     color: lightgray;
     font-size: large;
@@ -24,6 +28,7 @@ img {
 
 .info-box {
     padding: 1em;
+    margin: 0.5em;
     border: 1px solid;
     border-color: gray;
 }
@@ -49,39 +54,32 @@ hr {
 
 footer {
     position: relative;
-    width: 225px;
-    margin-left: calc(50% - 115px);
-    height: 40px;
-    background: #0f0f0f;
     text-align: center;
     z-index: 1;
-    transition: all 0.5s;
+}
+
+.footer-box {
+    background: #0f0f0f;
     border: 1px solid #515151;
     border-bottom: none;
 }
 
-.social-tab {
-    position: relative;
-    padding-left: 20px;
-    padding-right: 20px;
-    height: 100%;
-    text-align: center;
-    line-height: 40px;
-    display: inline-block;
-    transition: all 0.5s;
+.footer-icon {
     cursor: pointer;
+    display: inline-block;
+    width: 30%;
+    fill: white;
+    background-color: #0f0f0f;
 }
 
-.social-tab:hover {
+.footer-icon:hover {
     background: #333333;
-    transition: all 0.5s;
 }
 
-footer > img {
-    height: 25px;
-    margin-top: 7.5px;
+footer img {
+    height: 4em;
 }
 
-#linkedin-icon {
-    background-color: white;
+#disclaimer {
+    font-size: small;
 }

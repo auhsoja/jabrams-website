@@ -68,14 +68,15 @@
                 </div>
                 <p>TODO: Fill this space or otherwise make this look less shit</p>
                 <p>^ @me from 30 minutes ago, this space is now the de facto TODO list</p>
-                <p>TODO: Get a cool theme and stuff and find a way to make the background less boring</p>
+                <p>TODO: Try to do the background image with slide-in content thing</p>
                 <p>TODO: Add more pages and stuff about self</p>
-                <p>TODO: Refactor with react templating so I don't have to write so much redundant stuff</p>
+                <p>TODO: Refactor with svelte templating so I don't have to write so much redundant stuff</p>
                 <p>TODO: Consider putting the navigation items on right and just logo-y stuff left</p>
-                <p>TODO: Nix bootstrap and aim for something more like oscar's stuff</p>
-                <p>TODO: Fix the icons</p>
+                <p>TODO: Rework the nav bar. Still could use cuter animations and proper dropdowns (note bad cursor in amusements)</p>
+                <p>TODO: Add more icons</p>
                 <p>TODO: Add a resume tab and work on that</p>
-                <p>TODO: Replicate the scrolling effect on Oscar's website</p>
+                <p>TODO: Add in a license that would amuse me</p>
+                <p>TODO: Populate the footer with links</p>
             </div>
         </div>
     </div>
@@ -111,8 +112,23 @@
         </ul>
     </div>
     <footer>
-        <div id="linkedin-icon" class="social-tab"><img src="assets/linkedin.png" alt="linked-in"></div>
-        <div id="github-icon" class="social-tab"><img src="assets/github.png" alt="github"></div>
+        <div class="container-fluid footer-container">
+        <div class="row justify-content-center">
+            <div class="col-2 footer-box">
+                <div id="linkedin-icon" class="footer-icon">
+                    <img src="assets/linkedin-icon.svg" alt="linkedin">
+                </div>
+                <div id="github-icon" class="footer-icon">
+                    <img src="assets/git-icon.svg" alt="github">
+                </div>
+                <div id="stack-overflow-icon" class="footer-icon">
+                    <img src="assets/stack-overflow-icon.svg" alt="stack overflow">
+                </div>
+            <br />
+            <p id="disclaimer">&#169; Josh Abrams &#8214; No Rights Reserved</p>
+            </div>
+        </div>
+        </div>
     </footer>
     </div>
 
