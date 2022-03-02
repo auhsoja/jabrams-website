@@ -1,7 +1,3 @@
-*:hover {
-    transition: all 0.5s;
-}
-
 .header-quote {
     color: lightgray;
     font-size: large;
@@ -41,6 +37,9 @@ img {
     background-color: #3a3636;
     color: white !important;
     text-decoration: underline;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
 }
 
 .body-background {
@@ -73,7 +72,10 @@ footer {
 }
 
 .footer-icon:hover {
-    background: #333333;
+    background-color: #333333;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
 }
 
 footer img {
