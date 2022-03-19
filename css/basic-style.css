@@ -85,3 +85,8 @@ footer img {
 #disclaimer {
     font-size: small;
 }
+
+.runner {
+    position: relative;
+    z-index: 2;
+}
