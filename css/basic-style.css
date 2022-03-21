@@ -33,13 +33,18 @@ img {
     background: #141414 !important;
 }
 
-.navbar-dark .navbar-nav > li > a:hover, .navbar-dark .navbar-nav > li > a:focus {
+.navbar-dark .navbar-nav > .nav-item:hover, .navbar-dark .navbar-nav > .nav-item:focus {
     background-color: #3a3636;
     color: white !important;
-    text-decoration: underline;
     transition-property: all;
     transition-duration: 0.5s;
     transition-timing-function: ease-in;
+}
+
+.nav-item:hover .nav-icon {
+    display: inline-block;
+    transition-property: all;
+    transition-duration: 0.5s;
 }
 
 .body-background {
@@ -89,4 +94,23 @@ footer img {
 .runner {
     position: relative;
     z-index: 2;
+}
+
+.nav-icon {
+    position: relative;
+    float: left;
+    height: 1.5em;
+    margin-right: -10em;
+    margin-left: -2em;
+    vertical-align: text-bottom;
+    display: none;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-item {
+    align-items: center;
+    justify-content: center;
 }
