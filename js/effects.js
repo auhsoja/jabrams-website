@@ -22,7 +22,7 @@ $(document).ready(function() {
         // Autoresize the title text to make it as big as possible
         let height = $(".animated-title").height();
         $(".animated-title").css({
-            "font-size": (height * 0.8) + "px",
+            "font-size": height + "px",
             "line-height": height + "px"
         })
     }).trigger("resize");
