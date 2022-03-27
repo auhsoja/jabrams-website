@@ -27,29 +27,37 @@
 
         <div class="collapse navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav nav-fill w-100">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html"><img class="nav-icon" src="assets/home-icon.svg"/> Home<span class="sr-only">(current)</span></a>
+                <li id="home-tab" class="nav-item active">
+                    <a class="nav-link" href="index.html"><img class="nav-icon" src="assets/home-icon.svg"/><div class="nav-text">Home</div><span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html"><img class="nav-icon" src="assets/file-icon.svg"/>About</a>
+                <li id="about-tab" class="nav-item">
+                    <a class="nav-link" href="about.html"><img class="nav-icon" src="assets/file-icon.svg"/><div class="nav-text">About</div></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="rants.html"><img class="nav-icon" src="assets/speech-icon.svg"/>Rants</a>
+                <li id="rants-tab" class="nav-item">
+                    <a class="nav-link" href="rants.html"><img class="nav-icon" src="assets/speech-icon.svg"/><div class="nav-text">Rants</div></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link">
+                <li id="amusements-tab" class="nav-item">
+                    <a class="nav-link" href="amusements.html">
                       <img class="nav-icon" src="assets/puzzle-piece-icon.svg"/>
-                      Amusements
+                      <div class="nav-text">Amusements</div>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="references.html"><img class="nav-icon" src="assets/magnifying-glass-icon.svg"/>References</a>
+                <li id="references-tab" class="nav-item">
+                    <a class="nav-link" href="references.html"><img class="nav-icon" src="assets/magnifying-glass-icon.svg"/><div class="nav-text">References</div></a>
                 </li>
             </ul>
         </div>
     </nav>
     <!------------------------->
     <div class="body-background">
+    <div class="animation-spacing">
+        <div class="animated-title-box">
+            <div class="animated-title">
+                HELLO
+            </div>
+        </div>
+    </div>
+    <div class="content-area">
     <h1 class="title text-center">Welcome, To My Special Hell<sup class="ref-cite">[<a href="references.html#undertale-hell">I don't get it</a>]</sup></h1>
     <div class="container-fluid">
         <div class="row">
@@ -127,6 +135,7 @@
         </div>
         </div>
     </footer>
+    </div>
     </div>
 
     <script type="text/javascript" src="interactions.js"></script>
