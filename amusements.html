@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Amusements</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap stylesheet for good defaults -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Personal stylesheet, to make sure I do something -->
+    <link rel="stylesheet" type="text/css" href="css/basic-style.css">
+    <link rel="icon" href="assets/checkery-favicon.ico">
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <!-- Personal JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/effects.js"></script>
+    <script src="./js/wordle.js"></script>
+</head>
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav nav-fill w-100">
+                <li id="home-tab" class="nav-item">
+                    <a class="nav-link" href="index.html"><img class="nav-icon" src="assets/home-icon.svg"/><div class="nav-text">Home</div><span class="sr-only">(current)</span></a>
+                </li>
+                <li id="about-tab" class="nav-item">
+                    <a class="nav-link" href="about.html"><img class="nav-icon" src="assets/file-icon.svg"/><div class="nav-text">About</div></a>
+                </li>
+                <li id="rants-tab" class="nav-item">
+                    <a class="nav-link" href="rants.html"><img class="nav-icon" src="assets/speech-icon.svg"/><div class="nav-text">Rants</div></a>
+                </li>
+                <li id="amusements-tab" class="nav-item active">
+                    <a class="nav-link" href="amusements.html">
+                      <img class="nav-icon" src="assets/puzzle-piece-icon.svg"/>
+                      <div class="nav-text">Amusements</div>
+                    </a>
+                </li>
+                <li id="references-tab" class="nav-item">
+                    <a class="nav-link" href="references.html"><img class="nav-icon" src="assets/magnifying-glass-icon.svg"/><div class="nav-text">References</div></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!------------------------->
+    <div class="body-background">
+    <div class="animation-spacing">
+        <div class="animated-title-box longer-title-box">
+            <div class="animated-title">
+                PLAY WITH MY TOYS
+            </div>
+            <br>
+            <p>TODO: Figure out a way to make this page more seamlessly transition between options</p>
+            <p>TODO: Add a sidemenu to choose things</p>
+            <p>TODO: Fix button/entry style</p>
+        </div>
+    </div>
+    <div class="content-area">
+    <h1 class="title text-center">Boredle</h1>
+    <p class="header-quote text-center">(It's like Wordle, but the answer is always "BORED" until I update my word list)</h2>
+    <div class="container-fluid game-area text-center">
+        <div class="row justify-content-center">
+        <div class="game-inputs">
+            <input class="guesser" id="wordle-guesser" type="text" placeholder="Guess a word!">
+            <input class="guess-btn" id="wordle-guess-btn" type="button" value="Enter">
+        </div>
+        </div>
+        <div class="row justify-content-center">
+        <div class="letter-grid">
+            <!-- TODO: Why do I not have templating yet -->
+            <!-- (Laziness is the answer, but I'm still upset) -->
+            <div id="wdl-0-0" class="letter-grid-cell">-</div>
+            <div id="wdl-0-1" class="letter-grid-cell">-</div>
+            <div id="wdl-0-2" class="letter-grid-cell">-</div>
+            <div id="wdl-0-3" class="letter-grid-cell">-</div>
+            <div id="wdl-0-4" class="letter-grid-cell">-</div>
+            <div id="wdl-1-0" class="letter-grid-cell">-</div>
+            <div id="wdl-1-1" class="letter-grid-cell">-</div>
+            <div id="wdl-1-2" class="letter-grid-cell">-</div>
+            <div id="wdl-1-3" class="letter-grid-cell">-</div>
+            <div id="wdl-1-4" class="letter-grid-cell">-</div>
+            <div id="wdl-2-0" class="letter-grid-cell">-</div>
+            <div id="wdl-2-1" class="letter-grid-cell">-</div>
+            <div id="wdl-2-2" class="letter-grid-cell">-</div>
+            <div id="wdl-2-3" class="letter-grid-cell">-</div>
+            <div id="wdl-2-4" class="letter-grid-cell">-</div>
+            <div id="wdl-3-0" class="letter-grid-cell">-</div>
+            <div id="wdl-3-1" class="letter-grid-cell">-</div>
+            <div id="wdl-3-2" class="letter-grid-cell">-</div>
+            <div id="wdl-3-3" class="letter-grid-cell">-</div>
+            <div id="wdl-3-4" class="letter-grid-cell">-</div>
+            <div id="wdl-4-0" class="letter-grid-cell">-</div>
+            <div id="wdl-4-1" class="letter-grid-cell">-</div>
+            <div id="wdl-4-2" class="letter-grid-cell">-</div>
+            <div id="wdl-4-3" class="letter-grid-cell">-</div>
+            <div id="wdl-4-4" class="letter-grid-cell">-</div>
+            <div id="wdl-5-0" class="letter-grid-cell">-</div>
+            <div id="wdl-5-1" class="letter-grid-cell">-</div>
+            <div id="wdl-5-2" class="letter-grid-cell">-</div>
+            <div id="wdl-5-3" class="letter-grid-cell">-</div>
+            <div id="wdl-5-4" class="letter-grid-cell">-</div>
+        </div>
+        </div>
+    <footer>
+        <div class="container-fluid footer-container">
+        <div class="row justify-content-center">
+            <div class="col-2 footer-box">
+                <div id="linkedin-icon" class="footer-icon">
+                    <img src="assets/linkedin-icon.svg" alt="linkedin">
+                </div>
+                <div id="github-icon" class="footer-icon">
+                    <img src="assets/git-icon.svg" alt="github">
+                </div>
+                <div id="stack-overflow-icon" class="footer-icon">
+                    <img src="assets/stack-overflow-icon.svg" alt="stack overflow">
+                </div>
+            <br />
+            <p id="disclaimer">&#169; Josh Abrams &#8214; No Rights Reserved</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+    </div>
+    </div>
+
+    <script type="text/javascript" src="interactions.js"></script>
+
+</body>
+</html>
