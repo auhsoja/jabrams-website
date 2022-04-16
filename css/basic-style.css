@@ -250,3 +250,17 @@ footer img {
     color: black;
     transition: all 0.5s;
 }
+
+.mobile-version {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .browser-version {
+        display: none;
+    }
+
+    .mobile-version {
+        display: block;
+    }
+}
