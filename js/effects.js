@@ -18,6 +18,11 @@ function run() {
 
 $(document).ready(function() {
     $(".runner").on("mouseenter", run);
+    $(".animated-title-borders")
+        .css("max-width", "100%")   // Trigger CSS animation to expand width
+        .css("max-height", "20%");  // Trigger CSS animation to expand height
+    $(".animated-title-box")
+        .css("opacity", 1);         // Trigger CSS animation to fade in text
     $(window).resize(function() {
         // Autoresize the title text to make it as big as possible
         let height = $(".animated-title").height();
