@@ -25,7 +25,7 @@ $(document).ready(function() {
         .css("opacity", 1);         // Trigger CSS animation to fade in text
     $(window).resize(function() {
         // Autoresize the title text to make it as big as possible
-        let height = $(".animated-title").height();
+        let height = $(".animated-title").height() * 0.6;
         $(".animated-title").css({
             "font-size": height + "px",
             "line-height": height + "px"
