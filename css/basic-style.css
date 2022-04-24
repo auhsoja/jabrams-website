@@ -9,9 +9,9 @@
     --black-content-bg: #171717;
     --black-footer-bg: #0f0f0f;
     --expand-width-delay: 0.5s;
-    --expand-width-time: 2s;
+    --expand-width-time: 1s;
     --expand-height-time: 1s;
-    --inter-animation-antidelay: 1s;
+    --inter-animation-antidelay: 0.5s;
     --fade-in-title-text-time: 2s;
 }
 
